@@ -1,10 +1,9 @@
-
 body {
   margin: 0;
   background-color: #111;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
-    scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 header {
@@ -19,7 +18,9 @@ header h1 {
   font-size: 2rem;
   color: #e50914;
 }
+
 /* Barra de búsqueda */
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -41,13 +42,13 @@ header h1 {
   outline: none;
   padding: 0.5rem;
   border-radius: 30px 0 0 30px;
-}
+} 
 
 .search-bar input::placeholder {
   color: #888;
 }
 
-.search-bar button {
+ .search-bar button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -56,16 +57,33 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} 
 
 .search-bar button:hover svg {
   fill: #e50914;
 }
 
+.burbuja {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
 
+.burbuja img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 main {
   padding: 1rem 2rem;
 }
+
 /* Sección categoría */
 .categoria {
   margin-bottom: 3rem;
@@ -115,11 +133,21 @@ main {
   flex-direction: column;
 }
 
+.arrow {
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.flecha {
+  display: flex;
+  justify-content: end;
+}
+
 .tarjeta img {
   width: 100%;
-  height: 240px; 
+  height: 240px;
   object-fit: cover;
-  object-position: top; 
+  object-position: top;
   display: block;
   border-radius: 10px 10px 0 0;
   background: none;
@@ -140,14 +168,14 @@ main {
   margin: 0;
   overflow: hidden;
   white-space: normal;
-overflow-wrap: break-word;
-text-overflow: unset;
-  
+  overflow-wrap: break-word;
+  text-overflow: unset;
+
 }
 
 .tarjeta:hover {
   transform: scale(1.05);
-} 
+}
 
 
 
@@ -208,4 +236,3 @@ footer {
     font-size: 0.8rem;
   }
 }
-
