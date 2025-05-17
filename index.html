@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pantalla Principal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="principal.css" />
 </head>
 
@@ -23,6 +24,15 @@
       </div>
     </div>
   </header>
+  
+   <div class="tipo-selector">
+      <button class="tipo" data-type="tv" title="Series">
+        <i class="fas fa-tv"></i> Series
+      </button>
+      <button class="tipo" data-type="movie" title="Películas">
+        <i class="fas fa-film"></i> Películas
+      </button>
+    </div>
 
   <main>
     <section class="categoria">
@@ -172,7 +182,22 @@
   </main>
 
   <footer>
-   
+   <div class="footer_item1">
+    <i class="fa-regular fa-compass" aria-hidden="true"></i>
+    <p>Explore</p>
+   </div>
+   <div class="footer_item2">
+    <i class="fa-solid fa-film" aria-hidden="true"></i>
+    <p>My Shows</p>
+   </div>
+   <div class="footer_item3">
+    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+    <p>calendar</p>
+   </div>
+   <div class="footer_item4">
+    <i class="fa-solid fa-bell" aria-hidden="true"></i>
+    <p>Notification</p>
+   </div>
   </footer>
 </body>
 
