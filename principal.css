@@ -39,16 +39,18 @@ header h1 {
   color: rgb(117, 119, 121);
   margin-bottom: 5px;
 }
+
 @media (min-width: 601px) {
   footer {
     display: none;
   }
-  
+
 }
 
 .tipo-selector {
   display: none !important;
 }
+
 /* Barra de búsqueda */
 
 .search-bar {
@@ -72,13 +74,13 @@ header h1 {
   outline: none;
   padding: 0.5rem;
   border-radius: 30px 0 0 30px;
-} 
+}
 
 .search-bar input::placeholder {
   color: #888;
 }
 
- .search-bar button {
+.search-bar button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -87,7 +89,7 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-} 
+}
 
 .search-bar button:hover svg {
   fill: #e50914;
@@ -110,6 +112,7 @@ header h1 {
   object-fit: cover;
   display: block;
 }
+
 main {
   padding: 1rem 2rem;
 }
@@ -186,6 +189,7 @@ main {
 
 .info {
   text-align: center;
+  flex-direction: column;
   height: 50px;
   display: flex;
   align-items: center;
@@ -232,6 +236,12 @@ footer {
   font-size: 1em;
 }
 
+.año {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+
 .tipo-selector {
   display: flex;
   justify-content: center;
@@ -248,7 +258,6 @@ footer {
   cursor: pointer;
   font-size: 1em;
   border-radius: 6px;
-  display: flex;
   align-items: center;
   gap: 6px;
   transition: background 0.3s, color 0.3s;
@@ -263,14 +272,35 @@ footer {
   background-color: #333;
   color: white;
 }
+
+.año {
+  display: none !important;
+}
+
 /* Responsive para móviles */
 @media (max-width: 600px) {
-   footer {
-    display: flex; 
+  footer {
+    display: flex;
   }
- .tipo-selector {
+
+  .categoria h2 {
+    border-left: none;
+  }
+
+
+
+  .tipo-selector {
     display: block !important;
   }
+
+  .año {
+    display: block !important;
+  }
+
+  .burbuja {
+    display: none !important;
+  }
+
   header h1 {
     font-size: 1.5rem;
   }
