@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_personal",
+  "version": "1.0.0",
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wengon24/Proyecto_Personal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wengon24/Proyecto_Personal/issues"
+  },
+  "homepage": "https://github.com/Wengon24/Proyecto_Personal#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
