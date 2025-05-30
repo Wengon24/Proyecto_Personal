@@ -279,18 +279,17 @@ footer {
 
 /* Responsive para móviles */
 @media (max-width: 600px) {
+ 
   footer {
     display: flex;
   }
 
   .categoria h2 {
-    border-left: none;
+    display: none;
   }
 
-
-
   .tipo-selector {
-    display: block !important;
+    display: flex !important;
   }
 
   .año {
@@ -305,14 +304,25 @@ footer {
     font-size: 1.5rem;
   }
 
-  .categoria h2 {
-    font-size: 1.2rem;
-  }
+.carrusel{
+  display: block !important;
+}
+.grid-peliculas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem;
+  padding: 1rem;
+}
 
-  .grid-peliculas {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 0.8rem;
-  }
+.tarjeta {
+
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
 
   .tarjeta img {
     height: 180px;
