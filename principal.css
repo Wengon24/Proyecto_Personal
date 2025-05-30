@@ -306,6 +306,10 @@ footer {
 
 .carrusel{
   display: block !important;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .grid-peliculas {
   display: grid;
